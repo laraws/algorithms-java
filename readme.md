@@ -4,19 +4,19 @@
 
 ### sorting list
 
-- bubble sort
+-[ ] bubble sort
 
-- cocktail bubble sort
+-[ ] cocktail bubble sort
 
-- selection sort
+-[x] selection sort
 
-- insert sort
+-[x] insert sort
 
-- shell sort
+-[x] shell sort
 
-- quick sort
+-[ ] quick sort
 
-- merge sort
+-[ ] merge sort
 
 ### output
 

@@ -1,4 +1,4 @@
-package com.laraws.java.algs;
+package com.laraws.java.sorting;
 
 import java.io.*;
 import java.util.Arrays;
