@@ -1,14 +1,16 @@
 package com.laraws.java.algs;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class ShellSort {
-    public static void main(String[] args) throws FileNotFoundException {
-        int[] a = FileScanner.getInputArr(args);
+    public static void main(String[] args)  {
+        int[] a = new int[0];
+        try {
+            a = SortCommon.getInputArr(args);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         int len = a.length;
         shellSort(a, len);
         System.out.println(Arrays.toString(a));

@@ -1,13 +1,16 @@
 package com.laraws.java.algs;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Selection {
-    public static void main(String[] args) throws FileNotFoundException {
-        int[] a = FileScanner.getInputArr(args);
+    public static void main(String[] args) {
+        int[] a = new int[0];
+        try {
+            a = SortCommon.getInputArr(args);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         compare(a);
         System.out.println(Arrays.toString(a));
     }
@@ -21,13 +24,9 @@ public class Selection {
                     min = j;
                 }
             }
-            swap(b, i, min);
+            SortCommon.swap(b, i, min);
         }
     }
 
-    public static void swap(int[] a, int i, int j) {
-        int temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
-    }
+
 }
