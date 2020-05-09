@@ -7,14 +7,7 @@ import java.util.Scanner;
 
 public class Selection {
     public static void main(String[] args) throws FileNotFoundException {
-
-        Scanner scanner = new Scanner(new File(args[0]));
-        ArrayList<Integer> list = new ArrayList<>();
-        int i = 0;
-        while(scanner.hasNextInt()){
-            list.add(scanner.nextInt());
-        }
-        int[] a = list.stream().mapToInt(Integer::intValue).toArray();
+        int[] a = FileScanner.getInputArr(args);
         compare(a);
         System.out.println(Arrays.toString(a));
     }

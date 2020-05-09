@@ -1,11 +1,14 @@
 package com.laraws.java.algs;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ShellSort {
-    public static void main(String[] args) {
-//        int[] a = {8, 4, 2, 1, 0, 4, 7, 12, 5};
-        int[] a = {7, 4, 2, 1, 1, 3, 0, 7, 5, 10, 12, 8, 4};
+    public static void main(String[] args) throws FileNotFoundException {
+        int[] a = FileScanner.getInputArr(args);
         int len = a.length;
         shellSort(a, len);
         System.out.println(Arrays.toString(a));
